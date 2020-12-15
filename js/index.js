@@ -8,9 +8,9 @@ const data = {
     cocktailDetail: {}
 };
 
-new Header(document.body, "Mijn cocktailapplicatie", " | ",
+new Header(document.body, "Mijn cocktailapplicatie",
     "Vind hier je favoriete cocktails");
 new Form(document.body, data);
 const cocktails = new Cocktails(document.body, data);
-window.addEventListener("getCocktails", Cocktails.renderCocktails);
+window.addEventListener("getCocktails", cocktails.renderCocktails);
 new Footer(document.body);
